@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        //System.out.println("Hello World");
+        Scanner in = new Scanner(System.in);
+
+
+        int y =in.nextInt();
+        int z = in.nextInt();
+        int n = in.nextInt();
+        System.out.println((y*n + (z * n) / 100) + " " + (z*n)%100);
+        //System.out.println((z*n)%100);
+    }
+}
