@@ -1,0 +1,36 @@
+import java.util.Date;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        //System.out.println("Hello World");
+        Scanner in = new Scanner(System.in);
+
+
+        int a = in.nextInt();
+        int min = (a - (a/3600)*3600)/60;
+        int sec = a - min * 60 - (a/3600)*3600;
+        if (min > 9)
+        {
+            if (sec > 9)
+            {
+                System.out.println((a/3600)%24 + ":" + min + ":" + sec);
+            }
+            else
+            {
+                System.out.println((a/3600)%24 + ":" + min + ":0" + sec);
+            }
+        }
+        else
+        {
+            if (sec > 9)
+            {
+                System.out.println((a/3600)%24 + ":0" + min + ":" + sec);
+            }
+            else {
+                System.out.println((a/3600)%24 + ":0" + min + ":0" + sec);
+            }
+        }
+
+    }
+}
