@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+
+public class Main {
+    public static void main(String[] args) {
+        //System.out.println("Hello World");
+        Scanner in = new Scanner(System.in);
+
+
+        int k = in.nextInt();
+        if (k == 0)
+        {
+            System.out.println(1);
+        }
+        else {
+            long p6 = 2 << k-1;
+            System.out.println(p6);
+        }
+
+    }
+}
