@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+
+public class Main {
+    public static void main(String[] args) {
+        //System.out.println("Hello World");
+        Scanner in = new Scanner(System.in);
+
+
+        int k = in.nextInt();
+        int n = in.nextInt();
+        int p6 = k & (-1 << n);
+        System.out.println(p6);
+    }
+}
