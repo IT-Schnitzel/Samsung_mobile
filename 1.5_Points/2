@@ -1,0 +1,23 @@
+import java.io.Console;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        //System.out.println("Hello World");
+        Scanner in = new Scanner(System.in);
+
+        double a = in.nextDouble();
+        double b = in.nextDouble();
+
+        if (b < Math.sin(a) && b >= 0 && b <= 0.5 && a >= 0 && a <= Math.PI)
+        {
+            System.out.println("YES");
+        }
+        else {
+            System.out.println("NO");
+        }
+
+    }
+}
