@@ -1,0 +1,53 @@
+import java.io.Console;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        //System.out.println("Hello World");
+        Scanner in = new Scanner(System.in);
+
+        double a = in.nextDouble();
+        double b = in.nextDouble();
+        if (a == 0)
+        {
+            if (b <= 0)
+            {
+                System.out.println("no such x");
+            }
+            else {
+                System.out.println("any x");
+            }
+
+        }
+        else {
+            double absx = -b/a;
+            absx = Math.round(absx*10);
+            absx = 0.1 * absx;
+            if (absx <= 0)
+            {
+                if (a < 0)
+                {
+                    System.out.println("no such x");
+                }
+                else {
+                    System.out.println("any x");
+                }
+
+            }
+            else
+            {
+                if (a > 0)
+                {
+                    System.out.println("x<" + -absx + " or x>" + absx);
+                }
+                else {
+                    System.out.println(-absx + "<x<" + absx);
+                }
+            }
+        }
+
+    }
+
+}
