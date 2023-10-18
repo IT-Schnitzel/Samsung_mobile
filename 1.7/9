@@ -1,0 +1,28 @@
+import java.io.Console;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        //System.out.println("Hello World");
+        Scanner in = new Scanner(System.in);
+
+        int a = in.nextInt();
+        int min = 1000000;
+        while (a > 0)
+        {
+            if ((a%10) != 0)
+            {
+                if (a % 10 < min)
+                {
+                    min = a % 10;
+                }
+
+            }
+            a = a / 10;
+        }
+        System.out.println(min);
+    }
+
+}
