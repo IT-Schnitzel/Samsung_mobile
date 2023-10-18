@@ -1,0 +1,21 @@
+import java.io.Console;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        //System.out.println("Hello World");
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt();
+        if (a >= 0 && a < 10)
+        {
+            System.out.println("DIGIT");
+        } else if (a > 9 && a < 100) {
+            System.out.println("NUM");
+        }   else {
+            System.out.println("OTHER");
+        }
+    }
+
+}
