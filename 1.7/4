@@ -1,0 +1,22 @@
+import java.io.Console;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        //System.out.println("Hello World");
+        Scanner in = new Scanner(System.in);
+
+        int a = in.nextInt();
+        int b = in.nextInt();
+        int summ = 0;
+        while (a >= b)
+        {
+            a = a -b;
+            summ  += 1;
+        }
+        System.out.println(summ + " " + a);
+    }
+
+}
