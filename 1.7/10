@@ -1,0 +1,38 @@
+import java.io.Console;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        //System.out.println("Hello World");
+        Scanner in = new Scanner(System.in);
+
+        double a = in.nextInt();
+        double n = a+1;
+        double iter = 2;
+        int f = 1;
+        while (n < 2000)
+        {
+            while (iter < n)
+            {
+                if (n % iter == 0)
+                {
+                    f = 0;
+                    break;
+                }
+                iter = iter + 1;
+                //System.out.println(n + " " + iter);
+            }
+            if (f == 1)
+            {
+                System.out.println(Math.round(n));
+                break;
+            }
+            n ++;
+            iter = 2;
+            f = 1;
+        }
+    }
+
+}
