@@ -1,0 +1,143 @@
+import java.io.Console;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        //System.out.println("Hello World");
+        Scanner in = new Scanner(System.in);
+
+        int n = in.nextInt();
+        int m = in.nextInt();
+        int summ = 0;
+        int m1 = m;
+        boolean flag = true;
+        switch (n)
+        {
+            case 1:
+            {
+                summ += 31;
+                if (m1 > 31)
+                {
+                    flag = false;
+                }
+                m1 = 0;
+            }
+            case 2:
+            {
+                summ += 28;
+                if (m1 > 28)
+                {
+                    flag = false;
+                }
+                m1 = 0;
+            }
+            case 3:
+            {
+                summ += 31;
+                if (m1 > 31)
+                {
+                    flag = false;
+                }
+                m1 = 0;
+            }
+            case 4:
+            {
+                summ += 30;
+                if (m1 > 30)
+                {
+                    flag = false;
+                }
+                m1 = 0;
+            }
+            case 5:
+            {
+                summ += 31;
+                if (m1 > 31)
+                {
+                    flag = false;
+                }
+                m1 = 0;
+            }
+            case 6:
+            {
+                summ += 30;
+                if (m1 > 30)
+                {
+                    flag = false;
+                }
+                m1 = 0;
+            }
+            case 7:
+            {
+                summ += 31;
+                if (m1 > 31)
+                {
+                    flag = false;
+                }
+                m1 = 0;
+            }
+            case 8:
+            {
+                summ += 31;
+                if (m1 > 31)
+                {
+                    flag = false;
+                }
+                m1 = 0;
+            }
+            case 9:
+            {
+                summ += 30;
+                if (m1 > 30)
+                {
+                    flag = false;
+                }
+                m1 = 0;
+            }
+            case 10:
+            {
+                summ += 31;
+                if (m1 > 31)
+                {
+                    flag = false;
+                }
+                m1 = 0;
+            }
+            case 11:
+            {
+                summ += 30;
+                if (m1 > 30)
+                {
+                    flag = false;
+                }
+                m1 = 0;
+            }
+            case 12:
+            {
+                summ += 31;
+                if (m1 > 31)
+                {
+                    flag = false;
+                }
+                m1 = 0;
+            }
+            default:
+            {
+                break;
+            }
+        }
+
+        summ -= m;
+
+        if (summ < 0 || !flag)
+        {
+            System.out.println(-1);
+        }
+        else {
+            System.out.println(summ);
+        }
+    }
+
+}
