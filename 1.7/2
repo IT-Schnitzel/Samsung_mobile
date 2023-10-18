@@ -1,0 +1,29 @@
+import java.io.Console;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        //System.out.println("Hello World");
+        Scanner in = new Scanner(System.in);
+
+        int a = in.nextInt();
+        int summ = 0;
+        if (a > 10)
+        {
+            summ +=a;
+        }
+        while (a % 5 != 0)
+        {
+            a = in.nextInt();
+            if (a > 10)
+            {
+                summ += a;
+            }
+
+        }
+        System.out.println(summ);
+    }
+
+}
