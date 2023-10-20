@@ -1,0 +1,32 @@
+import java.io.Console;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Scanner;
+
+public class Main {
+
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int a  = in.nextInt();
+        int summ = -1;
+        boolean flag = true;
+        while (a > 0)
+        {
+            if (summ == a % 10)
+            {
+                System.out.println("YES");
+                flag = false;
+                break;
+            }
+            summ = a % 10;
+            a = a/10;
+        }
+        if (flag)
+        {
+            System.out.println("NO");
+        }
+
+    }
+
+}
