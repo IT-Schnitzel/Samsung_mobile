@@ -1,0 +1,26 @@
+import java.io.Console;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Scanner;
+
+public class Main {
+
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int a  = in.nextInt();
+        for (int i = 1; i < a + 1; i ++)
+        {
+            if (i == a)
+            {
+                System.out.print(2*i);
+            }
+            else {
+                System.out.print(2*i + " ");
+            }
+
+        }
+
+    }
+
+}
