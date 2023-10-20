@@ -1,0 +1,30 @@
+import java.io.Console;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Scanner;
+
+public class Main {
+
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int a  = in.nextInt();
+        int b  = in.nextInt();
+        int c  = in.nextInt();
+        int d  = in.nextInt();
+        boolean flag = true;
+        for (int i = 10000; i < 100000; i ++)
+        {
+            if (i % a == b && i % c == d)
+            {
+                System.out.print(i + " ");
+                flag = false;
+            }
+        }
+        if (flag)
+        {
+            System.out.println(-1);
+        }
+    }
+
+}
