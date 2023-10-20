@@ -1,0 +1,41 @@
+import java.io.Console;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Scanner;
+
+public class Main {
+
+
+    static boolean is_prime(int a)
+    {
+        boolean prime = false;
+        if (a > 1 && (a % 2 != 0 || a == 2) && (a % 3 != 0 || a == 3))
+        {
+            prime = true;
+        }
+        int i = 5;
+        int d = 2;
+        while (prime && i * i <= a)
+        {
+            prime = a % i != 0;
+            i += d;
+            d = 6 - d;
+
+        }
+        return prime;
+    }
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int a  = in.nextInt();
+        if (is_prime(a))
+        {
+            System.out.println("prime");
+        }
+        else {
+            System.out.println("composite");
+        }
+
+    }
+
+}
