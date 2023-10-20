@@ -1,0 +1,36 @@
+import java.io.Console;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Scanner;
+
+public class Main {
+
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int a  = in.nextInt();
+        int b  = in.nextInt();
+        if ((a > 0 && b < 0) || (a < 0 && b > 0))
+        {
+            a = Math.abs(a);
+            b = Math.abs(b);
+            int a1 = 0;
+            for (int i =0; i < b; i ++)
+            {
+                a1 = a1 + a;
+            }
+            System.out.println(-a1);
+        }
+        else {
+            a = Math.abs(a);
+            b = Math.abs(b);
+            int a1 = 0;
+            for (int i =0; i < b; i ++)
+            {
+                a1 = a1 + a;
+            }
+            System.out.println(a1);
+        }
+    }
+
+}
