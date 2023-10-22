@@ -1,0 +1,50 @@
+import java.io.Console;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.Scanner;
+
+public class Main {
+
+    public static int findIndex(int[] arr, int element) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == element) {
+                return i;
+            }
+        }
+        return -1; // если элемент не найден
+    }
+
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int a  = in.nextInt();
+        int s = 4;
+        int [] A = new int [a];
+        int [] B = new int [a];
+        int ind = 0;
+        for (int i =0 ; i < a; i ++)
+        {
+            A[i] = in.nextInt();
+            if (A[i] < 0)
+            {
+                B[ind] = A[i];
+                ind +=1;
+            }
+        }
+        for (int i =0 ; i < a; i ++)
+        {
+            if (A[i] >= 0)
+            {
+                B[ind] = A[i];
+                ind +=1;
+            }
+        }
+
+        for (int i =0 ; i < a; i ++)
+        {
+            System.out.print(B[i] + " ");
+        }
+    }
+
+}
