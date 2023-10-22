@@ -1,0 +1,54 @@
+import java.io.Console;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Scanner;
+
+public class Main {
+
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int a  = in.nextInt();
+        double [] A = new double [a];
+        for (int i =0 ; i < a; i ++)
+        {
+            A[i] = in.nextDouble();
+        }
+        boolean flag = true;
+        double l = 0;
+        double s = 0;
+        for (int i =0 ; i < a; i ++)
+        {
+            if (A[i] %2 != 0)
+            {
+                l += A[i];
+                s += 1;
+                flag= false;
+            }
+        }
+        if (flag)
+        {
+            System.out.println("NO");
+        }
+        else
+        {
+            double ll = (double) Math.round(l / s * 100) / 100;
+            if ((ll * 100) % 10 == 0)
+            {
+                if ((ll * 100) % 10 == 0)
+                {
+                    System.out.println(ll + "0");
+                }
+                else {
+                    System.out.println(ll + "0");
+                }
+
+            }
+            else {
+                System.out.println(ll);
+            }
+
+        }
+    }
+
+}
