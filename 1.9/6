@@ -1,0 +1,21 @@
+public class MyArrays {
+        public static void minToBegin(int [] arr)
+        {
+            int min = 10000;
+            int minind = -1;
+            for (int i = 0 ; i < arr.length; i ++)
+            {
+                if (arr[i] < min)
+                {
+                    min = arr[i];
+                    minind = i;
+                }
+            }
+
+            for (int i = minind; i >= 1; i --)
+            {
+                arr[i] = arr[i-1];
+            }
+            arr[0] = min;
+        }
+    }
