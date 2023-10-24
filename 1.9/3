@@ -1,0 +1,29 @@
+public class NumberDigits {
+        public static int sumOfThirteen(int n)
+        {
+
+            int s = 0;
+            int counter = 0;
+            int ss = 0;
+            int sum = 0;
+            //System.out.println(n);
+            while (n > counter)
+            {
+                ss = counter;
+                while (ss > 0)
+                {
+                    s += ss % 10;
+                    ss = ss / 10;
+                }
+                if (s % 13 == 0)
+                {
+                    sum +=1;
+
+                }
+                s = 0;
+                //System.out.println("F " + counter);
+                counter +=1;
+            }
+            return sum;
+        }
+    }
