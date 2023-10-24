@@ -1,0 +1,17 @@
+public class NumberDigits {
+        public static int sumOfSeven(int n, int m)
+        {
+            int s = 0;
+            for (int i = n; i < m +1; i ++)
+            {
+                if ((i / 100 == 0) && (i / 10 != 0) && i % 7 == 0)
+                {
+                    s += i % 10;
+                    s += (i / 10) % 10;
+                }
+            }
+            return s;
+        }
+
+
+    }
