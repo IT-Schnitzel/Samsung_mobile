@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class Main {
+
+//    public static int[] reverse (int []A, int f1, int f2)
+//    {
+//        int diff = (f2-f1)/2;
+//        int sc = 0;
+//        for (int i = f1-1; i < f1 + diff; i ++)
+//        {
+//            int kost = A[f2-sc-1];
+//            A[f2-sc-1] = A[i];
+//            A[i] = kost;
+//            sc+=1;
+//            //System.out.println(A[f2-sc-1]);
+//        }
+//        return A;
+//    }
+
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int a  = in.nextInt();
+        int [] A = new int [a];
+        for (int i = 0; i < a; i ++)
+        {
+            A[i] = in.nextInt();
+        }
+        for (int i = 0 ; i < a; i ++)
+        {
+            if (i % 2 == 0)
+            {
+                System.out.print(A[i] + " ");
+            }
+        }
+    }
+
+}
